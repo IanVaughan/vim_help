@@ -16,8 +16,6 @@
 
 ## Search/Find/Moving around
 * `100G` - line 100
-* `gg` - line 1
-* `G` - last line
 * `g;` - go back to last edit point (move back though changelist)
 * `g,` - move forward through changelist
 * `CTRL+o CTRL+i` - prev/next goto
@@ -40,35 +38,17 @@
 * `3fa` - find 3rd occurrence of `a`
 * `^` - go to first non-space char on line
 * `$` - end of line
-* `/` - search forwards
 * `?` - search backwards
 * `:/s/old/new/g` - subtitue old for new
 * `:1,10s/` - only between lines 1 and 10
 * `:%s/` - whole file
 
 ## Editing
-* `u` - Undo
 * `CTRL+r` - Redo
 * `!!` - repeat last command
-* `v` - visual select
-* `V` - select line
-* `a` - Insert after cursor (append)
-* `A` - Insert end of line
-* `o` - Insert new line (open)
-* `O` - Insert new line before
-* `cw` - (change) replace to end of word
-* `dw` - delete to end of word
-* `dd` - cut line
-* `yy` - Copy line (yank)
-* `p` - paste (put)
-* `P` - Paste before
 * `0y$` - yank from beginning to end of line
 * `ye` - yank to end of line
 * `dt"` - remove everything until `"`
-* `J` - join lines
-* `<` - indent left
-* `>` - indent right
-* `=` - autoindent
 * `CTRL+v` + move down - block select
 * `I#ESC` - comment each line
 * `CTRL+n` - complete word
@@ -83,9 +63,9 @@
   * `+` - buffer modified
   * `h` - hidden (unsaved changes and is not currently loaded in a window)
 * `CTRL-^` - switch between active and alternate buffers
-* `:bn` - buffer next
-* `:bp` - buffer previous
 * `:bd!` - remove buffer (lossing changes)
+* `:b22` - goto buffer 22
+* `:b <match>` - goto buffer (tab to complete)
 
 ## Windows
 * `ctrl-w w` - cycle between windows
@@ -109,9 +89,6 @@
 * `:tabclose` - close all windows in current tab
 * `:tabonly` - close all tabs execpt current one
 * `ctrl-w T` - move current window into its own tab
-* `:ls` - list buffers
-* `:b22` - goto buffer 22
-* `:b <match>` - goto buffer (tab to complete)
 
 ## Macros
 * `qa` - record actions in macro `a`
@@ -134,4 +111,3 @@
 * `:Elib [file]` - Edit lib file or Gemfile
 * `:Espec [file]` - Edit spec file or spec_helper
 * `:Ctags` - Ctags for the project
-
