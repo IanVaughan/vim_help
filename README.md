@@ -21,6 +21,7 @@
 * `CTRL+o CTRL+i` - prev/next goto
 * `two backticks` - go back to where you were
 * `gi` - go back to last insert
+* `gf` - load file under cursor
 * `{, }` - prev, next paragraph
 * `w` - start of next word (only alphanumeric + underscore)
 * `e` - end of word
