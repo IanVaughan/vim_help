@@ -1,104 +1,81 @@
 ## Misc
 * `CTRL+Q` - Turns on flow-control (if you turned it off by mistake)
 * `CTRL+a` - increment number
-* `:cw` - toggle quickfix list
-* `CTRL+E` - scroll window down (cursor stays)
-* `CTRL+Y` - scroll window up (cursor stays)
+  * `:cw` - toggle quickfix list
+  * `CTRL+E` - scroll window down (cursor stays)
+  * `CTRL+Y` - scroll window up (cursor stays)
 * `:r` - retrive (`:r filename` - loads file at cursor. `:r !ls` - loads ls at cur)
 
 ## Commands
 * `:x` - exit (with save)
-* `:e <path>` - open path
-* `:w` - write (save)
+  * `:e <path>` - open path
 * `:e!` - restore file (lose changes)
-* `:saveas <path>` - save to new file
-* `:edit` - open file in buffer
+  * `:saveas <path>` - save to new file
+  * `:edit` - open file in buffer
 
 ## Search/Find/Moving around
-* `100G` - line 100
-* `gg` - line 1
-* `G` - last line
-* `g;` - go back to last edit point (move back though changelist)
-* `g,` - move forward through changelist
-* `CTRL+o CTRL+i` - prev/next goto
-* `two backticks` - go back to where you were
-* `gi` - go back to last insert
-* `{, }` - prev, next paragraph
-* `w` - start of next word (only alphanumeric + underscore)
-* `e` - end of word
-* `W` - start of next word
-* `E` - end of word
-* `%` - matching bracket
-* `*` - next occurence of word
-* `#` - previous occurence
-* `fp` - find next `p`
-* `Fp` - find previous `p`
-* `tp` - `fp` but move cursor before
-* `Tp` - `Fp` but move cursor before
-* `,` - find next occurrence
-* `;` - find previous occurrence
-* `3fa` - find 3rd occurrence of `a`
-* `^` - go to first non-space char on line
-* `$` - end of line
-* `/` - search forwards
-* `?` - search backwards
-* `:/s/old/new/g` - subtitue old for new
-* `:1,10s/` - only between lines 1 and 10
-* `:%s/` - whole file
+  * `100G` - line 100
+  * `g;` - go back to last edit point (move back though changelist)
+  * `g,` - move forward through changelist
+  * `CTRL+o CTRL+i` - prev/next goto
+  * `two backticks` - go back to where you were
+  * `gi` - go back to last insert
+  * `{, }` - prev, next paragraph
+  * `%` - matching bracket
+  * `*` - next occurence of word
+  * `#` - previous occurence
+  * `fp` - find next `p`
+  * `Fp` - find previous `p`
+  * `tp` - `fp` but move cursor before
+  * `Tp` - `Fp` but move cursor before
+  * `,` - find next occurrence
+  * `;` - find previous occurrence
+  * `3fa` - find 3rd occurrence of `a`
+  * `^` - go to first non-space char on line
+  * `:/s/old/new/g` - subtitue old for new
+  * `:1,10s/` - only between lines 1 and 10
+  * `:%s/` - whole file
 
 ## Editing
-* `u` - Undo
-* `CTRL+r` - Redo
-* `!!` - repeat last command
-* `v` - visual select
-* `V` - select line
-* `a` - Insert after cursor (append)
-* `A` - Insert end of line
-* `o` - Insert new line (open)
-* `O` - Insert new line before
-* `cw` - (change) replace to end of word
-* `dw` - delete to end of word
-* `dd` - cut line
-* `yy` - Copy line (yank)
-* `p` - paste (put)
-* `P` - Paste before
-* `0y$` - yank from beginning to end of line
-* `ye` - yank to end of line
-* `dt"` - remove everything until `"`
-* `J` - join lines
-* `<` - indent left
-* `>` - indent right
-* `=` - autoindent
-* `CTRL+v` + move down - block select
-* `I#ESC` - comment each line
-* `CTRL+n` - complete word
+  * `CTRL+r` - Redo
+  * `!!` - repeat last command
+  * `dw` - delete to end of word
+  * `dd` - cut line
+  * `ye` - yank to end of line
+  * `dt"` - remove everything until `"`
+  * `J` - join lines
+  * `<` - indent left
+  * `>` - indent right
+  * `=` - autoindent
+  * `CTRL+v` + move down - block select
+  * `I#ESC` - comment each line
+  * `CTRL+n` - complete word
 * `CTRL+p` - complete word (previous)
-* `X` - delete char to left of cursor
-* `s` - delete char and enter insert mode
+  * `X` - delete char to left of cursor
+  * `s` - delete char and enter insert mode
 
 ## Buffers
-* `:ls` - list buffers
+  * `:ls` - list buffers
   * `a` - active
   * `#` - alternate buffer
   * `+` - buffer modified
-  * `h` - hidden (unsaved changes and is not currently loaded in a window)
-* `CTRL-^` - switch between active and alternate buffers
-* `:bn` - buffer next
-* `:bp` - buffer previous
+* `h` - hidden (unsaved changes and is not currently loaded in a window)
+  * `CTRL-^` - switch between active and alternate buffers
+  * `:bn` - buffer next
+  * `:bp` - buffer previous
 * `:bd!` - remove buffer (lossing changes)
 
 ## Windows
-* `ctrl-w w` - cycle between windows
-* `:split` - split window or `sp`
-* `:vsplit` - vertically split window
-* `CTRL+w hjkl` - switch windows
-* `CTRL+w c` - close window
-* `CTRL+w n` - new window
-* `CTRL+w s` - new split horizontally
-* `ctrl+w v` - new split vertically
-* `:sp <filename>` - split window and open fiename
-* `:vsp <filename>` - split virtially and open filename
-* `ctrl+w +/-` - resize windows
+  * `:split` - split window or `sp`
+  * `:vsplit` - vertically split window
+  * `CTRL+w hjkl` - switch windows
+  * `CTRL+w c` - close window
+  * `CTRL+w n` - new window
+  * `CTRL+w s` - new split horizontally
+  * `ctrl+w v` - new split vertically
+  * `:sp <filename>` - split window and open fiename
+  * `:vsp <filename>` - split virtially and open filename
+  * `ctrl+w +/-` - resize windows
 
 ## Tabs
 * `:tabe <file>` - open file in new tab
@@ -134,4 +111,9 @@
 * `:Elib [file]` - Edit lib file or Gemfile
 * `:Espec [file]` - Edit spec file or spec_helper
 * `:Ctags` - Ctags for the project
+
+
+Echo when yanked into register
+show registers
+echo when yanked into clipboard
 
